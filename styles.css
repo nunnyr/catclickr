@@ -1,8 +1,16 @@
-.game{
-    text-align: center;
+#luna {
+    border-radius: 50px;
 }
 
-/* #luna {
-    display: center;
+#artemis {
+    border-radius: 50px;
+}
 
-} */
+.row {
+    display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
