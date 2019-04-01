@@ -1,4 +1,6 @@
 let moves = 0;
+let  cat1 = "Luna"
+let cat2 = "Garfield"
 
 
 $(document).ready(function (count) {
