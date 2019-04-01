@@ -5,6 +5,7 @@
     <title>Cat Clicker</title>
     <meta name="A cat clicker" content="a simple game">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="app.js"></script>
    
@@ -16,18 +17,41 @@
 <body>
     <div class="game">
         <h1>CatClicker</h1>
-        <h2 id="counter1">Click me</h2>
+        <h2 id="counter1">Choose a cat</h2>
+            <div class="form-group">
+              <!-- <label for="sel1">Select list:</label> -->
+                <select class="form-control" id="sel1">
+                  <option>Luna</option>
+                  <option>Artemis</option>
+                  <option>Salem</option>
+                  <option>Duchess</option>
+                  <option>Sylvester</option>
+                </select>
+            </div>
+
+
+
+
+
+
+
         <div class="row"> 
             <div class="column">
+                <ul style="list-style-type:none;"">
+                  <li> <img id="luna" src="img/Luna.png" alt="Luna in Sailor Moon"> </li>
+                  <li> <img id="artemis" src="img/artemis.png" alt="Artemis in Sailor Moon"></li>
+                  <li> <img id="salem" src="img/salem.png" alt="Salem in Sabrina"></li>
+                  <li> <img id="duchess" src="img/duchess.png" alt="Duchess in Aristocats"></li>
+                  <li> <img id="sylvester" src="img/sylvester.png" alt="Sylvester the cat"></li>
+                </ul>
                 
-                <img id="luna" src="img/Luna.png" alt="Luna in Sailor Moon">
             </div>
-            <div class="column">
-                <h2 id="counter2">or me</h2>
-                <img id="artemis" src="img/artemis.png" alt="Artemis in Sailor Moon">
-            </div>
-        </div>
-    </div>
+            
+         </div>
+      </div>
+
+
+    
 </body>
 
 </html>

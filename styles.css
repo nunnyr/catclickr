@@ -1,20 +1,46 @@
-#luna {
-    border-radius: 50px;
-    /* height: auto;
-    width: 100%; */
+h1 , h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-#artemis {
+
+
+#artemis, #luna, #salem, #sylvester, #duchess {
+    cursor: pointer;
+    /* padding: 15px; */
     border-radius: 50px;
+    
     /* height: auto;
     width: 100%; */
 }
 
 .row {
     display: flex;
+    
 }
 
 .column {
   flex: 33.33%;
   padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-control{
+    cursor: pointer;
+    margin-left: 20px;
+    background-color: lightcyan;
+    color: black;
+    border-width: 2px;
+    padding: 20px;
+    font-size: 20px;
 }
