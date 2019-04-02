@@ -1,61 +1,42 @@
 let moves = 0;
-let luna = document.getElementById('#luna');
+// let luna = document.getElementById('#luna');
 let artemis = document.getElementById('#artemis');
 
 let cat= document.getElementById('');
+let salem = "I am a creature from the planet Mau and live with my human Sailor Serena. You have clicked me "
 
 
+$(document).ready(function () {
+    console.log("ready");
+    $('.form-group').click(function (event) {
+        let clickTarget = event.target;
+        console.log("i am the clickTarget:", clickTarget);
+        let cat = $('#sel1 option:selected').text();
+        console.log("I chose " + cat);
+        document.getElementById('name').innerHTML = "Hello, I am " + cat + ". ";
+        
+    })
+});
 
-// $(document).ready(function (count) {
-//     console.log("ready!");
-//     $('#luna').click(function () {
-//         moves1++
-//         console.log(moves1);
-//         document.getElementById('counter1').innerHTML = "You have clicked " + cat1 + " " + moves1 + " time(s)" ;
+$(document).ready(function (count) {
+    console.log("ready!");
+    $('#luna').click(function () {
+        moves++
+        console.log(moves);
+        document.getElementById('count').innerHTML = "You have fed me " + moves + " time(s).";
         
 
 
-//     });
+    });
     
-// })
-
-// $(document).ready(function (count) {
-//     console.log("ready!");
-//     $('#artemis').click(function () {
-//         moves2++
-//         console.log(moves2);
-//         document.getElementById('counter2').innerHTML = "You have clicked " + cat2 + " " + moves2 + " time(s)";
+})
 
 
 
-//     });
-
-// })
-
-
-$(document).ready(function() {
-    console.log("ready");
-    $('.form-group').click(function(event){
-        let clickTarget = event.target;
-        console.log("i am the clickTarget:" , clickTarget);
-        let cat = $('#sel1 option:selected').text();
-        console.log("I chose " + cat);
-        document.getElementById('name').innerHTML = "Hello, I am " + cat;
-   })
-});
-
-
-
-
-
-function showCat(cat) {
-    cat.classList.toggle('open');
-    cat.classList.toggle('show')
+function showCat (cat) {
+    cat.removeClassList('hidden');
+    cat.addClassList('show');
 }
-
-
- 
-
 
 
 

@@ -3,7 +3,26 @@ h1 , h2, h3, label {
     font-family: 'Poppins', sans-serif;
 
 }
+label {
+    font-size: 25px;
+}
+.header {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    background-color: lightblue;
+    z-index: 1;
+    display:inline-block;
+}
 
+.hidden {
+    display:none;
+
+}
+
+.show {
+    visibility: visible;
+}
 
 
 #artemis, #luna, #salem, #sylvester, #duchess {

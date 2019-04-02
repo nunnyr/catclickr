@@ -1,7 +1,7 @@
 <h1>CatClicker</h1>
 
 <h2>Motivation</h2>
-This project was created during Udacity's frontend nanodegree program. The styling and content was up to the developer. I ended up choosing animated cats for a user to learn about and click at.
+This project was created during Udacity's frontend nanodegree program. The styling and content was up to the developer. I ended up choosing animated cats from my childhoor for a user to select and "feed" by clicking it.
 
 <h2>Build Status</h2>
 This project is currently being edited as of April 2019. 
