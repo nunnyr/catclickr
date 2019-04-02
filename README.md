@@ -17,3 +17,4 @@ Frameworks used include:
 <h2>How to use?</h2>
 The name of the project is very self explanatory. I've chosen some of the cats that were highlights from my youth and listed them in the dropdown menu. Choose a cat, learn a fact about them and click to see a counter increment. 
 
+ 
