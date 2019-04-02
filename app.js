@@ -6,18 +6,18 @@ let cat= document.getElementById('');
 
 
 
-$(document).ready(function (count) {
-    console.log("ready!");
-    $('#luna').click(function () {
-        moves1++
-        console.log(moves1);
-        document.getElementById('counter1').innerHTML = "You have clicked " + cat1 + " " + moves1 + " time(s)" ;
+// $(document).ready(function (count) {
+//     console.log("ready!");
+//     $('#luna').click(function () {
+//         moves1++
+//         console.log(moves1);
+//         document.getElementById('counter1').innerHTML = "You have clicked " + cat1 + " " + moves1 + " time(s)" ;
         
 
 
-    });
+//     });
     
-})
+// })
 
 // $(document).ready(function (count) {
 //     console.log("ready!");
@@ -33,13 +33,34 @@ $(document).ready(function (count) {
 // })
 
 
-$(document).ready(function(event) {
+$(document).ready(function() {
     console.log("ready");
-    $(something).click(event) {
-        moves++
-        console.log(moves);
-        document.getElementById('counter1').innerHTML = "You have clickmed " + 
-    }
-})
+    $('.form-group').click(function(event){
+        let clickTarget = event.target;
+        console.log("i am the clickTarget:" , clickTarget);
+        let cat = $('#sel1 option:selected').text();
+        console.log("I chose " + cat);
+        document.getElementById('name').innerHTML = "Hello, I am " + cat;
+   })
+});
 
+
+
+
+
+function showCat(cat) {
+    cat.classList.toggle('open');
+    cat.classList.toggle('show')
+}
+
+
+ 
+
+
+
+
+
+// when you click something
+// get that id
+// update the moves counter and say a sentence
 
