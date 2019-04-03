@@ -1,21 +1,34 @@
 let moves = 0;
-// let luna = document.getElementById('#luna');
-//let artemis = document.getElementById('#artemis');
+let cat;
+
+
 
 
 $(document).ready(function () {
     console.log("ready");
     // $('.form-group').click(function (event) {
         $('.form-control').click(function(event) { 
+        setTimeout(function() {
         let clickTarget = event.target;
         console.log("i am the clickTarget:", clickTarget);
-        let cat = $('#sel1 option:selected').text();
         console.log("I chose " + cat);
-        document.getElementById('name').innerHTML = "Hello, I am " + cat + ". ";
+        greeting(cat);
         
+        }, 1000)
+
         })
     })
 // });
+
+
+function greeting(hello) {
+    let cat = $('#sel1 option:selected').text();
+    document.getElementById('name').innerHTML = "Hello, I am " + cat + ". ";
+
+}
+
+
+
 
 $(document).ready(function (count) {
     console.log("ready!");
