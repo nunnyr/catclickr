@@ -5,8 +5,8 @@ let cat;
 $(document).ready(function () {
     console.log("ready");
     // $('.form-group').click(function (event) {
-        $('.form-control').click(function(event) { 
-            setTimeout(function() {
+    $('.form-control').click(function(event) { 
+        setTimeout(function() {
             let clickTarget = event.target;
             console.log("i am the clickTarget:", clickTarget);
             greeting();
@@ -18,8 +18,8 @@ $(document).ready(function () {
 })
 
 //displaying cat chosen
-function showImage() {
-    $('form-control').append
+// function showImage() {
+//     $('form-control').append
 
 
 

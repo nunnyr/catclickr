@@ -24,19 +24,17 @@ label {
     z-index: 1;
     display:inline-block;
 }
-.hidden {
+
+/* .hidden {
     display:none;
 
 }
 
 .show {
     visibility: visible;
-}
 
-/* ul {
-    display: list-item;
-    list-style: none;
-} */
+
+
 
 /* ul li {
     display: block;
@@ -46,6 +44,10 @@ label {
     height: auto;
 } */
 
+ul {
+    display: list-item;
+    list-style: none;
+}
 
 #artemis, #luna, #salem, #sylvester, #duchess {
     cursor: pointer;
