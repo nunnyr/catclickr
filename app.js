@@ -19,9 +19,7 @@ $(document).ready(function () {
 
 //displaying cat chosen
 function showImage() {
-    $('li').addClassList('show');
-    $('li').addClassList('show');
-}
+    $('form-control').append
 
 
 
