@@ -55,3 +55,27 @@ function resetMoves() {
     
 }
 
+$(function() {
+
+    let model = {
+
+    };
+
+
+    let octopus = {
+
+    };
+
+    let view = {
+
+    };
+
+
+
+
+
+
+
+
+
+})
