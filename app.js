@@ -58,24 +58,39 @@ function resetMoves() {
 $(function() {
 
     let model = {
+        cats: function(name) {
+            $('#sel1 option:selected').text();        
+            document.getElementById('name').innerHTML = "Hello, I am " + cat + ". ";
+            console.log("I chose " + cat);
+        },
+
+        reset: function() {
+                moves=0;
+        },
 
     };
 
 
     let octopus = {
+        
+
+        
 
     };
 
     let view = {
+        greeting: function () {
+            $('li').click(function () {
+                moves++
+                console.log(moves);
+                document.getElementById('count').innerHTML = "You have fed me " + moves + " time.";
+                if (moves > 1 && moves === 0) {
+                    document.getElementById('count').innerHTML = "You have fed me " + moves + " times.";
+                }
 
+            });
+        }
     };
-
-
-
-
-
-
-
 
 
 })
