@@ -46,7 +46,7 @@ let model = {
 //i am initializing our views. 2 different views because i need to display the cats 
 //as well as show them
 //made a simple function to get currentCat. just accessed the key by doing model.currentCat
- 
+//in the octopus view i am just assigning things to communicate with the model and the view
 
 let octopus = {
     init: function() {
@@ -67,17 +67,24 @@ let octopus = {
         return model.cats;
     },
     //set the currently-selected cat to the object passed in 
+    //cat here is the thing we are passing through
     setCurrentCat: function(cat) {
         model.currentCat = cat;
     },
 
     //increments the counter for the currently selected cat
+    //here this function is incrementing the counter. the counter is in the 
+    //cats object that holds the arrays with the information of the cat.
+    //i am calling the catView object and attaching the render() function.
     incrementCounter: function() {
         model.currentCat.clickCount++;
         catView.render();
     }
 
 };
+
+
+
 
 let catView = {
     init: function(){
