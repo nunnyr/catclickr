@@ -1,6 +1,9 @@
 
 // ********** model ************
 let model = {
+//In the model we are storing our data. Such as what is our currentCat, our Cats are keys.
+//the keys and in my cat keys I have an array of objects with the values of each cat. 
+// model.cats[0].name
     currentCat: null,
     cats: [
         {
@@ -37,6 +40,13 @@ let model = {
 };
 
 // ********octopus *********
+//here the octopus talks with the model and the view
+//the first function is in the init key and it sets the currentCat by accessing the cats object
+//in the first index
+//i am initializing our views. 2 different views because i need to display the cats 
+//as well as show them
+//made a simple function to get currentCat. just accessed the key by doing model.currentCat
+ 
 
 let octopus = {
     init: function() {
@@ -66,7 +76,7 @@ let octopus = {
         model.currentCat.clickCount++;
         catView.render();
     }
-    
+
 };
 
 let catView = {
