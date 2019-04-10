@@ -66,7 +66,7 @@ let octopus = {
         model.currentCat.clickCount++;
         catView.render();
     }
-
+    
 };
 
 let catView = {
