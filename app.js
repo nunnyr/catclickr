@@ -84,6 +84,8 @@ let octopus = {
 };
 
 
+//I have to access the DOM elements
+//this points to the newly created object where the method is stored
 
 
 let catView = {
