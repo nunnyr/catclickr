@@ -103,6 +103,7 @@ let catView = {
 
         // render this view (update the DOM elements with the right values)
         this.render();
+        //it will render
     },
     render: function () {
         // update the DOM elements with values from the current cat
